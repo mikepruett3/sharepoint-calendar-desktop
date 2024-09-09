@@ -1,5 +1,8 @@
 // main.js
 
+// https://www.electronforge.io/config/makers/squirrel.windows
+if (require('electron-squirrel-startup')) return;
+
 const { app, BrowserWindow, Tray, Menu, nativeImage, dialog } = require('electron')
 const prompt = require('electron-prompt');
 const { getURL, setURL, delURL, getHA, setHA } = require('./settings.js');
